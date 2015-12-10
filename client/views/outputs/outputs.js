@@ -2,7 +2,7 @@ Template.output.helpers({
 	title: function() {
 		return "t'output"
 	},
-	output_elements: function() {
+	outputs: function() {
 		return Outputs.find();
 	}
 });
