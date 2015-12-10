@@ -1,10 +1,18 @@
 <template name="output">
 
 <h1>{{title}}</h1>
+<h2>User Place: {{user_place}} </h2>
 
 <ul>
 	{{ #each outputs }}
-		<li>{{text}}</li>
+		<li>
+			{{ #if $eq type 'speech' }}
+				<strong>{{who}} said:</strong>
+			{{/if}}
+
+
+			{{text}}
+		</li>
 	{{ /each }}
 </ul>
 
